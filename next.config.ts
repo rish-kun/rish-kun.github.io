@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   },
   trailingSlash: true,
   transpilePackages: ["three"],
+  turbopack: {},
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.optimization = {
