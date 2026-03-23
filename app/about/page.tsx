@@ -1,5 +1,6 @@
 const skills = [
   "Python",
+  "Django",
   "Go",
   "Docker",
   "Kubernetes",
@@ -34,10 +35,10 @@ export default function About() {
             </div>
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
-                Rishit
+                Rishit Verma
               </h2>
               <p className="text-sm text-neutral-400 mt-1">
-                CS Student · Backend · DevOps · ML
+                CS Student · BITS Pilani · Backend · DevOps · ML
               </p>
             </div>
           </div>
@@ -55,18 +56,26 @@ export default function About() {
               </h3>
               <div className="space-y-4 text-sm text-neutral-600 leading-relaxed">
                 <p>
-                  I&apos;m a CS student interested in backend systems, DevOps,
-                  and applied machine learning — particularly agentic frameworks
-                  and fine-tuning.
+                  I&apos;m a second-year CS student at BITS Pilani, currently
+                  based on campus in Rajasthan. I grew up in Tokyo, Japan, where
+                  my family still lives.
                 </p>
                 <p>
-                  I like building things that are fast, reliable, and close to
-                  the metal. Most of my work lives at the boundary between
-                  infrastructure and intelligence.
+                  At BITS, I work with DVM (Department of Visual Media) on
+                  backend development for the Oasis and Apogee festival platforms
+                  using Django, with a focus on security and infrastructure. I
+                  also contribute to the Wall Street Club&apos;s News Analyser — a
+                  Django-based financial news sentiment analysis platform.
                 </p>
                 <p>
-                  Currently exploring distributed systems and how to make ML
+                  My interests span backend systems, DevOps, and applied ML.
+                  I&apos;m particularly drawn to distributed systems and making ML
                   pipelines production-worthy.
+                </p>
+                <p className="text-neutral-500">
+                  Outside of tech: fitness (running, gym), cooking, travel
+                  planning, music discovery, and hunting down deals on tech
+                  gadgets and clothes.
                 </p>
               </div>
             </div>

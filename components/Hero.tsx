@@ -45,7 +45,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-base text-neutral-500 mt-3 font-normal">
-          CS Student
+          CS Student @ BITS Pilani
         </p>
 
         <div className="flex flex-wrap gap-2 mt-5">
@@ -60,8 +60,7 @@ export default function Hero() {
         </div>
 
         <p className="text-sm text-neutral-500 mt-5 leading-relaxed max-w-sm">
-          Building things at the intersection of systems engineering and machine
-          learning.
+          Backend and DevOps at DVM. Building for Oasis & Apogee.
         </p>
 
         <div className="flex items-center gap-3 mt-7">
