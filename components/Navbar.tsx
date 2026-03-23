@@ -3,14 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MobileNav from "./MobileNav";
+import { config } from "@/config";
 
 const navLinks = [
   { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
   { href: "/blog", label: "Blog" },
 ];
-
-const resumeHref = "/resume.pdf";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -22,7 +21,7 @@ export default function Navbar() {
         href="/"
         className="text-base font-bold tracking-tight text-neutral-900 hover:text-accent transition-colors z-10"
       >
-rish.
+        {config.name.toLowerCase()}.
       </Link>
 
       {/* Center: nav links — absolutely centered in full viewport width */}
@@ -41,7 +40,7 @@ rish.
           </Link>
         ))}
         <a
-          href={resumeHref}
+          href={config.resumePath}
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm text-neutral-400 hover:text-neutral-900 hover:underline underline-offset-4 transition-colors"
@@ -52,10 +51,10 @@ rish.
 
       {/* Right: contact email */}
       <a
-        href="mailto:hello@rishit.dev"
+        href={`mailto:${config.email}`}
         className="hidden md:block text-xs text-neutral-400 hover:text-neutral-900 transition-colors tracking-wide z-10"
       >
-        hello@rishit.dev
+        {config.email}
       </a>
 
       {/* Mobile nav */}

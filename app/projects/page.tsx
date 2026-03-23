@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { config } from "@/config";
 
 type Project = {
   id: number;
@@ -13,41 +14,7 @@ type Project = {
   year: string;
 };
 
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "Project One",
-    shortDesc: "A short description of what this project does and its impact.",
-    longDesc:
-      "A longer write-up goes here — what problem it solves, how it works under the hood, and what you learned. This can cover architecture decisions, scale, and interesting challenges you ran into.",
-    tags: ["Python", "Docker"],
-    github: "https://github.com/rish-kun",
-    demo: null,
-    year: "2025",
-  },
-  {
-    id: 2,
-    title: "Project Two",
-    shortDesc: "A short description of what this project does and its impact.",
-    longDesc:
-      "This project tackles distributed workload orchestration at scale. Built with Go and deployed on Kubernetes, it handles service discovery, rolling deployments, and automated rollback on failure.",
-    tags: ["Go", "Kubernetes"],
-    github: "https://github.com/rish-kun",
-    demo: null,
-    year: "2025",
-  },
-  {
-    id: 3,
-    title: "Project Three",
-    shortDesc: "A short description of what this project does and its impact.",
-    longDesc:
-      "Fine-tuned a language model on domain-specific data using PyTorch and LoRA adapters. Explored quantisation for inference efficiency and built an agentic pipeline on top of the base model.",
-    tags: ["ML", "PyTorch"],
-    github: "https://github.com/rish-kun",
-    demo: null,
-    year: "2024",
-  },
-];
+const projects: Project[] = config.projects as Project[];
 
 export default function Projects() {
   const [selected, setSelected] = useState<Project>(projects[0]);
