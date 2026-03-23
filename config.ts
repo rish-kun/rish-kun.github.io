@@ -1,16 +1,15 @@
 export const config = {
-  name: "Rish",
+  name: "Rishit",
   fullName: "Rishit Verma",
   title: "CS Sophomore @ BITS Pilani",
-  tagline: "Backend and DevOps at DVM. Building for Oasis & Apogee.",
-  heroDescription:
-    "Backend and DevOps at DVM. Building for Oasis & Apogee.",
+  tagline: "Exploring agent orchestration and MLOps.",
+  heroDescription: "Backend and DevOps at DVM. Building for Oasis & Apogee.",
   currentlyDescription:
     "Exploring agentic frameworks and LLM fine-tuning at university. Open to internships.",
-  email: "hello@rishit.dev",
+  email: "mail.rishit.verma@gmail.com",
   resumePath: "/resume.pdf",
   avatar: {
-    src: "/avatar.jpg",
+    src: "/avatar.jpeg",
     alt: "Rishit Verma",
   },
   location: {
@@ -37,9 +36,8 @@ export const config = {
     "PyTorch",
     "LangChain",
     "CI/CD",
-    "Terraform",
   ],
-  heroSkills: ["Backend", "DevOps", "ML"],
+  heroSkills: ["Backend", "DevOps", "AI"],
   social: {
     github: {
       label: "GitHub",
@@ -53,7 +51,7 @@ export const config = {
     },
     twitter: {
       label: "X / Twitter",
-      href: "https://x.com/rish_kun",
+      href: "https://x.com",
       icon: "twitter",
     },
   },
@@ -61,7 +59,8 @@ export const config = {
     {
       id: 1,
       title: "Project One",
-      shortDesc: "A short description of what this project does and its impact.",
+      shortDesc:
+        "A short description of what this project does and its impact.",
       longDesc:
         "A longer write-up goes here — what problem it solves, how it works under the hood, and what you learned. This can cover architecture decisions, scale, and interesting challenges you ran into.",
       tags: ["Python", "Docker"],
@@ -72,7 +71,8 @@ export const config = {
     {
       id: 2,
       title: "Project Two",
-      shortDesc: "A short description of what this project does and its impact.",
+      shortDesc:
+        "A short description of what this project does and its impact.",
       longDesc:
         "This project tackles distributed workload orchestration at scale. Built with Go and deployed on Kubernetes, it handles service discovery, rolling deployments, and automated rollback on failure.",
       tags: ["Go", "Kubernetes"],
@@ -83,7 +83,8 @@ export const config = {
     {
       id: 3,
       title: "Project Three",
-      shortDesc: "A short description of what this project does and its impact.",
+      shortDesc:
+        "A short description of what this project does and its impact.",
       longDesc:
         "Fine-tuned a language model on domain-specific data using PyTorch and LoRA adapters. Explored quantisation for inference efficiency and built an agentic pipeline on top of the base model.",
       tags: ["ML", "PyTorch"],
