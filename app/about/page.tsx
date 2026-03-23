@@ -1,4 +1,5 @@
 import { config } from "@/config";
+import Image from "next/image";
 
 const socialLinks = Object.values(config.social);
 
@@ -27,18 +28,14 @@ export default function About() {
         <div className="max-w-3xl mx-auto flex flex-col items-center">
           {/* Profile header — centered */}
           <div className="flex flex-col items-center text-center gap-4 mb-14">
-            <div className="w-28 h-28 rounded-full bg-neutral-100 border border-neutral-200 flex flex-col items-center justify-center gap-2 text-neutral-300 flex-shrink-0">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-              >
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
+            <div className="w-28 h-28 rounded-full overflow-hidden border border-neutral-200 flex-shrink-0">
+              <Image
+                src={config.avatar.src}
+                alt={config.avatar.alt}
+                width={112}
+                height={112}
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-neutral-900">
