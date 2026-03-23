@@ -22,7 +22,7 @@ export default function Navbar() {
         href="/"
         className="text-base font-bold tracking-tight text-neutral-900 hover:text-accent transition-colors z-10"
       >
-        rishit.
+rish.
       </Link>
 
       {/* Center: nav links — absolutely centered in full viewport width */}
